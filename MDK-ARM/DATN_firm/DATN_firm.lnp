@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"datn_firm\startup_stm32f103xb.o"
+"datn_firm\fonts.o"
+"datn_firm\test.o"
+"datn_firm\ssd1306.o"
+"datn_firm\main.o"
+"datn_firm\stm32f1xx_it.o"
+"datn_firm\stm32f1xx_hal_msp.o"
+"datn_firm\stm32f1xx_hal_gpio_ex.o"
+"datn_firm\stm32f1xx_hal_i2c.o"
+"datn_firm\stm32f1xx_hal.o"
+"datn_firm\stm32f1xx_hal_rcc.o"
+"datn_firm\stm32f1xx_hal_rcc_ex.o"
+"datn_firm\stm32f1xx_hal_gpio.o"
+"datn_firm\stm32f1xx_hal_dma.o"
+"datn_firm\stm32f1xx_hal_cortex.o"
+"datn_firm\stm32f1xx_hal_pwr.o"
+"datn_firm\stm32f1xx_hal_flash.o"
+"datn_firm\stm32f1xx_hal_flash_ex.o"
+"datn_firm\stm32f1xx_hal_exti.o"
+"datn_firm\stm32f1xx_hal_tim.o"
+"datn_firm\stm32f1xx_hal_tim_ex.o"
+"datn_firm\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DATN_firm\DATN_firm.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DATN_firm.map" -o DATN_firm\DATN_firm.axf
